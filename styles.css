@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(82, 82, 168);
+    
+   
+}
+.title h2{
+    padding: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+}
+/* .title .underline{
+    border-bottom: solid 1px gold;
+   width: 10%; */
+.btn-contaimer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    justify-content: space-around;
+  
+}
+.btn-contaimer .filter-btn{
+    padding: 5px;
+    border: solid 1px goldenrod;
+    color: goldenrod;
+}
+.btn-contaimer .filter-btn:hover{
+    background-color: rgb(128, 108, 58);
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    background-color: #eee;  
+}
+.menu-center{
+    padding: 1rem;
+   
+}
+.menu-center{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.info-items{
+    display: flex;
+    
+}
+.info-items img{
+    width: 240px;
+    height: 200px;
+    border-radius: 3px;
+}
+.info-items .Name-item{
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgb(39, 39, 167);
+
+}
+.info-items .Prices{
+    font-size: 18px;
+    padding-left: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(201, 29, 29);
+}
+.info-items p{
+    padding: 10px;
+    font-family: monospace;
+}
+.info-items .btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 17px;
+    color: rgb(14, 12, 12);
+   
+}
+.info-items .btn:hover{
+    background-color: rgb(224, 35, 35);
+    color: #fff;
+    border: none;
+}
+@media screen and (min-width:900px) {
+    .menu{
+    
+        font-size: 16px;
+        background-color: #eee;  
+    }
+    .menu-center{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+ 
+    
+} 
+@media screen and (max-width:602px) {
+    .menu{
+      font-size: 16px;
+        background-color: #eee;  
+      
+    }
+    .info-items{
+        display:inline-block;
+        align-items: center;
+      justify-content: center; 
+    }
+    .info-items img{
+        display: block;
+        margin: 0 auto;
+        width: 240px;
+        height: 200px;
+        border-radius: 3px;
+
+    }
+    .info-items p{
+        display: block;
+        text-align: center;
+     
+    }
+    .info-items .Name-item{
+        display: block;
+        text-align: center;
+    }
+    .info-items .Prices{
+        display: block;
+        text-align: center;
+       
+    }
+} 
+
+
+
